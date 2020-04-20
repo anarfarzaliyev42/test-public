@@ -3,7 +3,12 @@ $(function () {
 
   let timer;
   let counter = 1;
+  let lengthOfSlider=$(".slider-container img").length;
+
+  
   function sliderTimer() {
+ 
+    
     // Line spans
     let allLineSpans = $(".line-span-container span");
     allLineSpans.each(function (index, element) {
@@ -36,6 +41,9 @@ $(function () {
     let sliderImages = $(".slider-container img");
     sliderImages.each(function (index, element) {
       $(element).removeClass("active-slider-image");
+    $(element).css({
+        "animation-name": "none",
+      });
     });
 
     $($(".slider-container img")[counter - 1])
@@ -43,11 +51,12 @@ $(function () {
       .css({
         "animation-name": "sliderScale",
       });
-    if (counter == 4) {
+    if (counter == lengthOfSlider) {
       counter = 1;
-    } else if (counter < 4) {
+    } else if (counter < lengthOfSlider) {
       counter++;
     }
+    
   }
 
   timer = setInterval(sliderTimer, 5000);
@@ -55,6 +64,9 @@ $(function () {
      let currentIndex= $(this).index();
       currentElement(currentIndex);
   })
+
+
+
   function currentElement(curretIndex) {
 
     let allLineSpans = $(".line-span-container span");

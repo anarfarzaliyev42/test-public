@@ -1,5 +1,11 @@
+@import 'media-aside-nav';
 @media (max-width: 1024px) {
-    
+ 
+
+  nav.main-nav {
+    display: none;
+
+}
     #footer {
   
       bottom: 0 !important;
@@ -41,12 +47,15 @@
         }
       }
     }
-    .branches-grid figure:nth-child(3n) {
-      margin: 0 28px 100px 0 !important;
-   }
   }
 
   @media (min-width: 1024px) {
+    .branches-grid figure{
+      &:nth-child(3n) {
+        margin: 0 0 100px;
+      }
+    }
+    
     .phone {
       span {
         color: #159ee3;
@@ -81,14 +90,19 @@
       padding: 0 0 10px !important;
       justify-content: space-between !important;
     }
-    #aside-nav {
-      width: calc(77% - 10px) !important;
-    }
+  
   }
   @media (max-width: 767px) {
-    #aside-nav {
-      width: calc(60% - 10px) !important;
+    .branches-grid figure{
+      width:100% !important;
+  }
+    .branches-grid figure {
+      margin-right: 0 !important;
     }
+    .main-content > div h2{
+      font-size: 30px !important;
+    }
+   
   
     .aside-sections{
       display: flex;
@@ -96,9 +110,15 @@
     }
   }
   @media (max-width: 468px) {
-    #aside-nav {
-      width: calc(100% - 10px) !important;
+    .main-content div{
+      padding: 0 !important;
     }
+    
+   .branches-grid figure  {
+      width: 100% !important;
+    margin: 0 0 80px !important;
+    }
+  
   }
   @media (max-width: 479px) and (min-width: 240px) {
     .footer-container {
@@ -132,15 +152,9 @@
   @media (max-width: 767px) and (min-width: 480px){
     nav.main-nav {
         display: none;
-        width: 100%;
-        padding: 0 10px;
-        left: 0;
-        top: 120px;
     }
     
-    .branches-grid figure{
-        width: calc(100% - 19px) !important;
-    }
+    
   }
 
   @media (max-width: 480px){
@@ -153,12 +167,12 @@
     }
   }
   @media (max-width: 1023px) and (min-width: 768px){
-    nav.main-nav {
-        display: none;
-        top: 240px;
+    .branches-grid figure:nth-child(2n) {
+      margin-right: 0 !important;
     }
+ 
     .branches-grid figure{
-        width: calc(48% - 19px) !important;
+        width:  48% !important;
     }
   
   }

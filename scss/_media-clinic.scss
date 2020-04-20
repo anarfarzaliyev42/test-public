@@ -1,5 +1,5 @@
+@import 'media-aside-nav';
 @media (max-width: 1024px) {
-    
  
   #header > div {
     padding: 20px 20px 0 !important;
@@ -69,14 +69,10 @@
     padding: 0 0 10px !important;
     justify-content: space-between !important;
   }
-  #aside-nav {
-    width: calc(77% - 10px) !important;
-  }
+ 
 }
 @media (max-width: 767px) {
-  #aside-nav {
-    width: calc(60% - 10px) !important;
-  }
+  
   
   .aside-sections {
     display: flex;
@@ -87,9 +83,7 @@
   }
 }
 @media (max-width: 468px) {
-  #aside-nav {
-    width: calc(100% - 10px) !important;
-  }
+  
   nav.main-nav {
     display: none;
     width: 100%;
@@ -145,12 +139,12 @@
 
 @media (max-width: 1023px) and (min-width: 768px){
     .polyclinic-grid figure {
-        width: calc(33.333% - 20px) !important;
+        width: calc(33% - 20px) !important;
     }
     .main-content > div {
         max-width: 1920px !important;
     }
     .polyclinic-grid figure.long {
-        width: calc(66.666% - 20px) !important;
+      width: calc(66.5% - 20px) !important;
     }
 }

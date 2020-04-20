@@ -1,13 +1,6 @@
+@import 'media-aside-nav';
 @media (max-width: 1024px) {
-    .analiz_wrapper .analyzes-right {
-        width: 100% !important;
-        float: none !important;
-        height: 400px !important;
     
-    }
-    .analyzes-left {
-        display: none !important;
-    }
   
   
   
@@ -76,9 +69,7 @@
     padding: 0 0 10px !important;
     justify-content: space-between !important;
   }
-  #aside-nav {
-    width: calc(77% - 10px) !important;
-  }
+  
 }
 @media (max-width: 767px) {
    
@@ -89,9 +80,7 @@
             }
         }
     }
-  #aside-nav {
-    width: calc(60% - 10px) !important;
-  }
+  
   .aside-sections {
     display: flex;
     flex-direction: column;
@@ -104,9 +93,7 @@
     .doctors-grid figure {
         width: calc(100% - 25px) !important;
     }
-  #aside-nav {
-    width: calc(100% - 10px) !important;
-  }
+ 
   nav.main-nav {
     display: none;
     width: 100%;
@@ -164,6 +151,6 @@
 }
 @media (max-width: 1023px) and (min-width: 768px){
     .doctors-grid figure {
-        width: calc(33.33% - 25px) !important;
+        width: calc(33% - 25px) !important;
     }
 }

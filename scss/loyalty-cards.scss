@@ -64,7 +64,7 @@
       float: left;
       animation-duration: 0.15s;
       transition: all 0.15s linear 0.2s;
-      height: 146px;
+      height: 95px;
       margin: 0 auto;
       position: relative;
       z-index: 3;
@@ -262,13 +262,17 @@ nav.main-nav {
 }
 nav.main-nav ul li {
   padding: 0 0 20px;
+ 
 }
 nav.main-nav ul li a {
   display: block;
   width: 70px;
   height: 70px;
-  background-image: -webkit-linear-gradient(225deg, #dcdcdc, #dcdcdc);
-  background-image: -o-linear-gradient(225deg, #dcdcdc, #dcdcdc);
+  &:hover{
+    &::before{
+      opacity: 1;
+    }
+  }
   background-image: linear-gradient(225deg, #dcdcdc, #dcdcdc);
   position: relative;
   overflow: hidden;
@@ -360,8 +364,9 @@ nav.main-nav ul li a {
 .card-list article:nth-child(3n-2) {
     margin: 0;
 }
+
 .card-list article {
-    width: calc(33.333333% - 30px);
+    width: 33%;
     height: 270px;
 
     margin: 0 0 0 30px;

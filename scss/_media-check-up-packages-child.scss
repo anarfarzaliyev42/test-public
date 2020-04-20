@@ -1,20 +1,11 @@
+@import 'media-aside-nav';
 @media (max-width: 1024px) {
-    .analiz_wrapper .analyzes-right {
-        width: 100% !important;
-        float: none !important;
-        height: 400px !important;
     
-    }
-    .analyzes-left {
-        display: none !important;
-    }
   
   .main-right {
     display: none !important;
   }
-  .main-bg {
-    display: none !important;
-  }
+ 
   .main-left {
     width: 100% !important;
     padding: 0 !important;
@@ -75,29 +66,8 @@
         padding: 0px 0 0 !important;
     }
     
-    
-  .vacancy-list .list ul li {
-    width: calc(50% - 25px) !important;
-  }
-  .analiz_wrapper {
-    display: block !important;
-    padding: 0 0 10px !important;
-  }
-  .analyzes-left {
-    width: 100% !important;
-    float: none !important;
-    margin: 0 0 20px !important;
-
-    border-radius: 6px;
-  }
-  .analyzes-search .link {
-    width: 100%;
-    text-align: center;
-  }
-  .analyzes-search .form {
-    width: 100% !important;
-    padding: 0 0 10px;
-  }
+  
+ 
   .footer-container {
     display: block;
     text-align: center;
@@ -107,13 +77,11 @@
     padding: 0 0 10px !important;
     justify-content: space-between !important;
   }
-  #aside-nav {
-    width: calc(77% - 10px) !important;
-  }
+  
 }
 @media (max-width: 767px) {//************************
   .main-content > div > h2 {
-    padding: 8px 55px 31px 0px !important;
+    padding: 8px 0px 32px 8px !important;
     font-size: 22px !important;
   }
   .package-container > div {
@@ -124,9 +92,7 @@
     width: 100% !important;
     margin: 0 0 70px !important;
 }
-  #aside-nav {
-    width: calc(60% - 10px) !important;
-  }
+ 
   
   .aside-sections {
     display: flex;
@@ -137,9 +103,7 @@
   }
 }
 @media (max-width: 468px) {
-  #aside-nav {
-    width: calc(100% - 10px) !important;
-  }
+ 
   nav.main-nav {
     display: none;
     width: 100%;

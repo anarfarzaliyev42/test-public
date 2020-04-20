@@ -1,5 +1,7 @@
-@media (max-width: 1024px) {
+@import 'media-aside-nav';
 
+@media (max-width: 1024px) {
+ 
   #footer {
    
     bottom: 0 !important;
@@ -64,6 +66,7 @@
   }
 }
 @media (max-width: 767px) and (min-width: 480px) {
+ 
   .footer-container {
     display: block;
     text-align: center;
@@ -80,30 +83,24 @@
   
 }
 @media (max-width: 767px) {
-  #aside-nav {
-    width: calc(77% - 10px) !important;
-  }
+ 
   .aside-sections{
     flex-direction: row;
     flex-wrap: wrap;
   
   }
-}
-@media (max-width: 468px) {
+  .aside-sections{
+    flex-direction: column !important;
+
+  }
   .aside-sections{
   
     section{
       width: calc(100% - 10px) !important;
     }
   }
-  #aside-nav {
-    width: calc(100% - 10px) !important;
-  }
-  .aside-sections{
-    flex-direction: column !important;
-
-  }
 }
+
 @media (max-width: 479px) and (min-width: 240px) {
   .footer-container {
     flex-direction: column !important;

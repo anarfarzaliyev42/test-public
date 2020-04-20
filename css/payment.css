@@ -40,6 +40,27 @@ ul {
 }
 
 @media (max-width: 1024px) {
+  #aside-nav {
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #aside-nav {
+    width: 65% !important;
+  }
+  #aside-nav .aside-nav-container {
+    padding: 140px 20px 0 !important;
+  }
+}
+
+@media (max-width: 468px) {
+  #aside-nav {
+    width: calc(100% - 10px) !important;
+  }
+}
+
+@media (max-width: 1024px) {
   .analiz_wrapper .analyzes-right {
     width: 100% !important;
     float: none !important;
@@ -55,9 +76,6 @@ ul {
     height: 35px;
   }
   .main-right {
-    display: none !important;
-  }
-  .main-bg {
     display: none !important;
   }
   .main-left {
@@ -143,14 +161,11 @@ ul {
         -ms-flex-pack: justify !important;
             justify-content: space-between !important;
   }
-  #aside-nav {
-    width: calc(77% - 10px) !important;
-  }
 }
 
 @media (max-width: 767px) {
-  #aside-nav {
-    width: calc(60% - 10px) !important;
+  .main-content > div h2 {
+    font-size: 28px !important;
   }
   .aside-sections {
     display: -webkit-box;
@@ -167,9 +182,6 @@ ul {
 }
 
 @media (max-width: 468px) {
-  #aside-nav {
-    width: calc(100% - 10px) !important;
-  }
   nav.main-nav {
     display: none;
     width: 100%;
@@ -242,8 +254,8 @@ ul {
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
@@ -253,8 +265,8 @@ ul {
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
@@ -402,7 +414,7 @@ ul {
           animation-duration: 0.15s;
   -webkit-transition: all 0.15s linear 0.2s;
   transition: all 0.15s linear 0.2s;
-  height: 146px;
+  height: 95px;
   margin: 0 auto;
   position: relative;
   z-index: 3;
@@ -638,6 +650,10 @@ nav.main-nav ul li a {
   transition: all 0.2s linear;
 }
 
+nav.main-nav ul li a:hover::before {
+  opacity: 1;
+}
+
 nav.main-nav ul li a img {
   display: block;
   max-height: 38px;
@@ -845,7 +861,7 @@ nav.main-nav ul li a::after {
 
 .payment-form .three-input input {
   display: block;
-  width: calc(33.333% - 15px);
+  width: calc(33% - 15px);
   height: 58px;
   padding: 0 20px;
   border: solid 1px #c2c2c2;
@@ -925,6 +941,27 @@ nav.main-nav ul li a::after {
           animation-duration: 0.2s;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#phone:hover::-webkit-input-placeholder {
+  color: black;
+}
+
+#phone:hover:-ms-input-placeholder {
+  color: black;
+}
+
+#phone:hover::-ms-input-placeholder {
+  color: black;
+}
+
+#phone:hover::placeholder {
+  color: black;
 }
 
 .price-active {

@@ -1,14 +1,6 @@
+@import 'media-aside-nav';
 @media (max-width: 1024px) {
-    .analiz_wrapper .analyzes-right {
-        width: 100% !important;
-        float: none !important;
-        height: 400px !important;
     
-    }
-    .analyzes-left {
-        display: none !important;
-    }
-  
   
   
   #header > div {
@@ -76,13 +68,11 @@
     padding: 0 0 10px !important;
     justify-content: space-between !important;
   }
-  #aside-nav {
-    width: calc(77% - 10px) !important;
-  }
+  
 }
 @media (max-width: 767px) {
   .main-content > div > h2 {
-    padding:5px 80px 30px 0px !important;
+    padding: 7px 0 30px 0px !important;
     font-size: 22px !important;
   }
     .main-content {
@@ -92,9 +82,7 @@
             }
         }
     }
-  #aside-nav {
-    width: calc(60% - 10px) !important;
-  }
+  
   .aside-sections {
     display: flex;
     flex-direction: column;
@@ -105,15 +93,14 @@
   .article-tabs a {
     width: 100% !important;
     height: 48px !important;
+    line-height: 48px !important;
 }
 }
 @media (max-width: 468px) {
     .doctors-grid figure {
         width: calc(100% - 25px) !important;
     }
-  #aside-nav {
-    width: calc(100% - 10px) !important;
-  }
+  
   nav.main-nav {
     display: none;
     width: 100%;
@@ -171,6 +158,6 @@
 }
 @media (max-width: 1023px) and (min-width: 768px){
     .doctors-grid figure {
-        width: calc(33.33% - 25px) !important;
+        width: calc(33% - 25px) !important;
     }
 }

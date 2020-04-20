@@ -36,8 +36,8 @@
         width: 20px;
         height: 14px;
         position: absolute;
-        top: calc(50% - 7px);
-        left: calc(50% - 10px);
+        top: 39%;
+        left: 33%;
         em {
           transition: all 0.3s linear;
           animation-duration: 0.3s;
@@ -64,7 +64,7 @@
       float: left;
       animation-duration: 0.15s;
       transition: all 0.15s linear 0.2s;
-      height: 146px;
+      height: 95px;
       margin: 0 auto;
       position: relative;
       z-index: 3;
@@ -262,12 +262,17 @@ nav.main-nav {
 }
 nav.main-nav ul li {
   padding: 0 0 20px;
+  
 }
 nav.main-nav ul li a {
   display: block;
   width: 70px;
   height: 70px;
-
+  &:hover{
+    &::before{
+      opacity: 1;
+    }
+  }
   background-image: linear-gradient(225deg, #dcdcdc, #dcdcdc);
   position: relative;
   overflow: hidden;

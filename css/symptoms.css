@@ -39,21 +39,32 @@ ul {
   src: url("../assets/fonts/rubik/Rubik-Medium.ttf");
 }
 
+@media (max-width: 1024px) {
+  #aside-nav {
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #aside-nav {
+    width: 65% !important;
+  }
+  #aside-nav .aside-nav-container {
+    padding: 140px 20px 0 !important;
+  }
+}
+
+@media (max-width: 468px) {
+  #aside-nav {
+    width: calc(100% - 10px) !important;
+  }
+}
+
 .main-content > div {
   width: 100% !important;
   max-width: 1920px !important;
   padding: 0 20px 0 20px !important;
   margin: 0 !important;
-}
-
-.analiz_wrapper .analiz_right {
-  width: 100% !important;
-  float: none !important;
-  height: 400px !important;
-}
-
-.analiz_left {
-  display: none !important;
 }
 
 .main-right {
@@ -145,12 +156,12 @@ ul {
         -ms-flex-pack: justify !important;
             justify-content: space-between !important;
   }
-  #aside-nav {
-    width: calc(77% - 10px) !important;
-  }
 }
 
 @media (max-width: 767px) {
+  .main-container h2 {
+    font-size: 25px !important;
+  }
   .search-image-header .text {
     display: none !important;
   }
@@ -176,9 +187,6 @@ ul {
   .search {
     display: none !important;
   }
-  #aside-nav {
-    width: calc(60% - 10px) !important;
-  }
   .article_tabs a {
     width: 100% !important;
     height: 48px !important;
@@ -198,9 +206,6 @@ ul {
 }
 
 @media (max-width: 468px) {
-  #aside-nav {
-    width: calc(100% - 10px) !important;
-  }
   nav.main-nav {
     display: none;
     width: 100%;
@@ -223,14 +228,6 @@ ul {
   .cover-image-container .image.compact img {
     max-width: 100% !important;
     width: auto !important;
-  }
-  .analiz_search .link {
-    width: 100%;
-    text-align: center;
-  }
-  .analiz_search .form {
-    width: 100% !important;
-    padding: 0 0 10px;
   }
   .footer-container {
     -webkit-box-orient: vertical !important;
@@ -280,8 +277,8 @@ ul {
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
@@ -291,8 +288,8 @@ ul {
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
@@ -440,7 +437,7 @@ ul {
           animation-duration: 0.15s;
   -webkit-transition: all 0.15s linear 0.2s;
   transition: all 0.15s linear 0.2s;
-  height: 146px;
+  height: 95px;
   margin: 0 auto;
   position: relative;
   z-index: 3;
@@ -674,6 +671,10 @@ nav.main-nav ul li a {
           animation-duration: 0.2s;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+
+nav.main-nav ul li a:hover::before {
+  opacity: 1;
 }
 
 nav.main-nav ul li a img {

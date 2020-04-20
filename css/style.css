@@ -40,6 +40,27 @@ ul {
 }
 
 @media (max-width: 1024px) {
+  #aside-nav {
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  #aside-nav {
+    width: 65% !important;
+  }
+  #aside-nav .aside-nav-container {
+    padding: 140px 20px 0 !important;
+  }
+}
+
+@media (max-width: 468px) {
+  #aside-nav {
+    width: calc(100% - 10px) !important;
+  }
+}
+
+@media (max-width: 1024px) {
   #footer {
     bottom: 0 !important;
   }
@@ -113,9 +134,6 @@ ul {
 }
 
 @media (max-width: 767px) {
-  #aside-nav {
-    width: calc(77% - 10px) !important;
-  }
   .aside-sections {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -124,20 +142,14 @@ ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-}
-
-@media (max-width: 468px) {
-  .aside-sections section {
-    width: calc(100% - 10px) !important;
-  }
-  #aside-nav {
-    width: calc(100% - 10px) !important;
-  }
   .aside-sections {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
+  }
+  .aside-sections section {
+    width: calc(100% - 10px) !important;
   }
 }
 
@@ -191,8 +203,8 @@ ul {
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
@@ -202,8 +214,8 @@ ul {
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
@@ -309,8 +321,8 @@ ul {
   width: 20px;
   height: 14px;
   position: absolute;
-  top: calc(50% - 7px);
-  left: calc(50% - 10px);
+  top: 39%;
+  left: 33%;
 }
 
 #header div .toggler span em {
@@ -345,7 +357,7 @@ ul {
           animation-duration: 0.15s;
   -webkit-transition: all 0.15s linear 0.2s;
   transition: all 0.15s linear 0.2s;
-  height: 146px;
+  height: 95px;
   margin: 0 auto;
   position: relative;
   z-index: 3;
@@ -424,7 +436,7 @@ ul {
 }
 
 .main-bg div {
-  width: calc(100% - 120px);
+  width: 91%;
   height: 100%;
   position: absolute;
   top: 0px;
@@ -457,7 +469,6 @@ ul {
 
 .slider-container {
   overflow: hidden;
-  width: calc(100% - 120px);
   background: #0077b3;
 }
 
@@ -844,7 +855,7 @@ ul {
 }
 
 #aside-nav {
-  width: calc(51% - 10px);
+  width: 51%;
   right: 0;
   height: 100%;
   font-size: 0;

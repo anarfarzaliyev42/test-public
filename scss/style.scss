@@ -32,8 +32,8 @@
         width: 20px;
         height: 14px;
         position: absolute;
-        top: calc(50% - 7px);
-        left: calc(50% - 10px);
+        top: 39%;
+    left: 33%;
         em {
           transition: all 0.3s linear;
           animation-duration: 0.3s;
@@ -60,7 +60,7 @@
       float: left;
       animation-duration: 0.15s;
       transition: all 0.15s linear 0.2s;
-      height: 146px;
+      height: 95px;
       margin: 0 auto;
       position: relative;
       z-index: 3;
@@ -134,7 +134,7 @@
 }
 .main-bg {
   div {
-    width: calc(100% - 120px);
+    width: 91%;
     height: 100%;
     position: absolute;
     top: 0px;
@@ -160,8 +160,8 @@
 }
 .slider-container {
   overflow: hidden;
-  width: calc(100% - 120px);
-  background: rgb(0, 119, 179);
+
+    background: rgb(0, 119, 179);
   &::after {
     content: "";
     display: block;
@@ -461,7 +461,7 @@ opacity: 0;
   transition: all 1s linear !important;
 }
 #aside-nav {
-  width: calc(51% - 10px);
+  width: 51%;
   right: 0;
   height: 100%;
   font-size: 0;
