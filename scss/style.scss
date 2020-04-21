@@ -286,7 +286,7 @@ opacity: 0;
           animation-duration: 0.2s;
           background: rgb(15, 200, 240);
           border-radius: 0px 0px 0px 90%;
-          transition: all 0.2s linear 0s;
+          transition: all 0.5s linear 0s;
         }
         display: block;
         width: 100%;
@@ -311,6 +311,7 @@ opacity: 0;
           font-size: 20px;
           font-weight: bold;
           padding: 0px 28px;
+          font-family: "Gilroy-bold";
         }
       }
     }
@@ -342,7 +343,7 @@ opacity: 0;
         opacity: 0;
         top: -120px;
         transition: all 0.3s linear;
-
+        font-family: 'Gilroy-regular';
         color: #fff;
         span {
           color: #fff;
@@ -373,12 +374,12 @@ opacity: 0;
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
-  margin-top: 60px;
+  margin-top: 114px;
   .right-bottom-container {
     width: 100%;
     margin: 17px 0;
     display: flex;
-    padding-top: 60px;
+
     .bullets {
       div {
         cursor: pointer;
@@ -399,7 +400,7 @@ opacity: 0;
         margin-left: -12px;
         padding: 0 0 0 110px;
         position: absolute;
-        font-family: "Gilroy";
+        font-family: "Gilroy-regular";
         font-size: 16px;
         font-weight: 500;
         transition: all 0.3s linear;
@@ -441,6 +442,7 @@ opacity: 0;
     color: #fff;
     transition: all 0.2s linear;
     opacity: 0;
+    font-family: "Gilroy-extra-bold";
   }
 }
 .active-bullet {
@@ -496,6 +498,7 @@ opacity: 0;
       font-size: 24px;
       font-weight: bold;
       color: #fff;
+        font-family: 'Gilroy-bold';
       a {
         color: #fff;
         text-decoration: none;
@@ -567,6 +570,7 @@ opacity: 0;
   flex-wrap: nowrap;
   align-content: stretch;
   align-items: center;
+  text-align: center;
   .netty {
     img {
       width: 95px;

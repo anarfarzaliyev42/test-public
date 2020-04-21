@@ -6,9 +6,6 @@ $(function () {
     })
    //****************************** */
     
-$(document).on('change','.open-menu-select',function () {
-    console.log($(this).());
-    
-})
+
   });
    
